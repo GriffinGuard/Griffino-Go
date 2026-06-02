@@ -1,6 +1,6 @@
 # Griffino Go SDK
 
-A Go SDK for building [Griffino](https://github.com/MorCherlf) plugins.
+A Go SDK for building [Griffino](https://github.com/GriffinGuard/Griffino) plugins.
 Griffino is a plugin-orchestration platform: plugins run as containers and
 communicate with the platform and with one another over RabbitMQ. This SDK
 gives a plugin author a small, typed surface for that interaction — register
