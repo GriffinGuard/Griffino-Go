@@ -1,0 +1,59 @@
+# ── Go build / object files ────────────────────────────────────────────────
+*.o
+*.a
+*.so
+*.dylib
+*.exe
+*.exe~
+*.dll
+*.test
+*.out
+
+# ── Coverage / profiling ────────────────────────────────────────────────────
+*.cover
+coverage.txt
+coverage.html
+*.prof
+*.pprof
+__debug_bin*
+
+# ── Go workspace ────────────────────────────────────────────────────────────
+go.work
+go.work.sum
+
+# ── Dependency directories (uncomment if vendoring) ─────────────────────────
+# /vendor/
+
+# ── Build artifacts (anchored to repo root so nested placeholders survive) ──
+/dist/
+/build/
+/bin/
+
+# ── Credentials / secrets ─────────────────────────────────────────────────
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.asc
+*.gpg
+key.json
+credentials.json
+
+# ── OS files ──────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE / editor ──────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ── Agent transient state ─────────────────────────────────────────────────
+# Agent config (.claude/, .codex/, CLAUDE.md, AGENTS.md, …) IS tracked in the
+# private repo and stripped at publish time by scripts/sync-to-public.sh.
+# Only the ephemeral per-agent worktrees are excluded from version control.
+/.claude/worktrees/

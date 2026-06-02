@@ -1,0 +1,73 @@
+{
+  "GriffinoPluginConfigVersion": "1.0",
+  "name": "DeepSeek AI",
+  "pluginId": "com.morcherlf.deepseek",
+  "pluginVersion": "0.1.0",
+  "services": [
+    {
+      "configs": [
+        {
+          "description": "DeepSeek platform API key.",
+          "group": "API Configuration",
+          "key": "DEEPSEEK_API_KEY",
+          "name": "DeepSeek API Key",
+          "optional": false,
+          "type": "password"
+        },
+        {
+          "default": "deepseek-chat",
+          "description": "DeepSeek model used for chat requests.",
+          "group": "API Configuration",
+          "key": "DEEPSEEK_MODEL",
+          "name": "Default Model",
+          "optional": false,
+          "type": "options",
+          "values": [
+            {
+              "display": "DeepSeek-V3 (Recommended)",
+              "value": "deepseek-chat"
+            },
+            {
+              "display": "DeepSeek-R1 (Reasoning)",
+              "value": "deepseek-reasoner"
+            }
+          ]
+        },
+        {
+          "default": "https://api.deepseek.com",
+          "description": "Base URL for DeepSeek compatible APIs.",
+          "group": "API Configuration",
+          "key": "DEEPSEEK_BASE_URL",
+          "name": "API Base URL",
+          "optional": true,
+          "type": "string"
+        },
+        {
+          "default": 4096,
+          "description": "Maximum completion tokens per request.",
+          "group": "Model Parameters",
+          "key": "MAX_TOKENS",
+          "name": "Max Tokens",
+          "optional": true,
+          "type": "int",
+          "validation": {
+            "maximum": 8192,
+            "minimum": 256
+          }
+        },
+        {
+          "default": "You are a helpful assistant.",
+          "description": "Global system prompt applied to all users.",
+          "group": "Model Parameters",
+          "key": "SYSTEM_PROMPT",
+          "name": "System Prompt",
+          "optional": true,
+          "type": "string"
+        }
+      ],
+      "id": "deepseek-service"
+    }
+  ],
+  "site": "https://github.com/MorCherlf/Griffino-DeepSeek-Plugin",
+  "tutorial": "https://platform.deepseek.com/api-docs"
+}

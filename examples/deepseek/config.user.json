@@ -1,0 +1,51 @@
+{
+  "GriffinoPluginConfigVersion": "1.0",
+  "configs": [
+    {
+      "default": "",
+      "description": "Prompt appended after the global system prompt.",
+      "group": "Personalization",
+      "key": "USER_SYSTEM_PROMPT",
+      "name": "Personal System Prompt",
+      "optional": true,
+      "type": "string"
+    },
+    {
+      "default": 1,
+      "description": "Controls response randomness.",
+      "group": "Personalization",
+      "key": "TEMPERATURE",
+      "name": "Temperature",
+      "optional": true,
+      "type": "float"
+    },
+    {
+      "default": "auto",
+      "description": "Preferred reply language.",
+      "group": "Personalization",
+      "key": "REPLY_LANGUAGE",
+      "name": "Reply Language",
+      "optional": true,
+      "type": "options",
+      "values": [
+        {
+          "display": "Automatic",
+          "value": "auto"
+        },
+        {
+          "display": "Simplified Chinese",
+          "value": "zh-CN"
+        },
+        {
+          "display": "English",
+          "value": "en-US"
+        }
+      ]
+    }
+  ],
+  "name": "DeepSeek AI",
+  "pluginId": "com.morcherlf.deepseek",
+  "pluginVersion": "0.1.0",
+  "site": "https://github.com/MorCherlf/Griffino-DeepSeek-Plugin",
+  "tutorial": "https://platform.deepseek.com/api-docs"
+}
